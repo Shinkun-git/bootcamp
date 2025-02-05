@@ -1,0 +1,212 @@
+html{
+    max-width: 100%;
+}
+body{
+    background-color: #cdb4db;
+    max-width:100%;
+}
+header{
+    width:55%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+#search{
+    width:100%;
+    border: 1px solid black;
+    border-radius: 1em;
+    line-height: 2em;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.cardContent button{
+    background: none;    
+    font-size: 1em;
+    border: none;
+    color: #00b4d8;
+    font-weight: 300;
+}
+
+@media screen and (max-width:1280px){
+    #search,label{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+    img{
+        width:100px;
+    }
+    .leftHalf{
+        background-color: darkorchid;
+    }
+    .rightHalf{
+        background-color: yellow;
+    }
+    #bigcard{
+        /* background-color: brown; */
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #bigImg{
+        height:60%;
+    }
+    #bigImg img{
+        height:100%;
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .leftHalf{
+        display: none;
+    }
+    #search,label{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-flow: row;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .rightHalf{
+        display: flex;
+        flex-flow: row;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .card{
+        width:30%;
+        background-color: #bde0fe;
+        border: 1px solid #606c38;
+        border-radius: 1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .cardImg img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1em;
+    }
+    .cardDescription{
+        position:relative;
+        bottom: 3em;
+        padding: 5px;
+        /* height: 30%; */
+        box-sizing: border-box;
+        width:80%;
+        font-size: 0.5em;
+        background-color: #bfea32;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        border-radius: 1em;
+    }
+    .cardDescription hr{
+        display: none;
+    }
+    .cardImg{
+        height:60%;
+        width: 100%;
+    }
+    .cardAdditional{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .cardAdditional div:nth-of-type(3){
+        display: none;
+    }
+    .cardContent{
+        box-sizing: border-box;
+    }
+    .cardContent h3,p,button{
+        margin: 0px auto;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width :600px){ 
+    .leftHalf{
+        display: none;
+    }
+    #search,label{
+        display: inline-block;
+    }
+    .container{
+        width:90%;
+        display: flex;
+        border-radius: 1em;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .rightHalf{
+        display: block;
+    }
+    .card{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #bde0fe;
+        border: 1px solid #606c38;
+        border-radius: 1em;
+        height: 25%;
+        margin-bottom: 1em;
+    }
+    .card > div{
+        width: 50%;
+        height: 100%;
+    }
+    .cardImg img{
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 0em;
+        border-bottom-left-radius: 1em ;
+        border-bottom-right-radius: 0em ;
+    }
+    .cardDescription{
+        position: static;
+        box-sizing: border-box;
+        padding: 5px;
+        font-size: 0.7em;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        border-top-left-radius: 0em;
+        border-top-right-radius: 1em;
+        border-bottom-left-radius: 0em ;
+        border-bottom-right-radius: 1em ;
+    }
+    .cardAdditional{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        height: 20%;
+        font-size: smaller;
+    }
+    .cardContent{
+        height: 80%;
+        box-sizing: border-box;
+    }
+    .cardContent h3,p,button{
+        margin: 3px auto;
+    }
+    
+}
