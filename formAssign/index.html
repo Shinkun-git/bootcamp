@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Assignment</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>TO THE NEW</div>
+            <div>
+                <a href="">Home</a>
+                <a href="">Quick Help</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="get">
+            <div id="formHead">
+                Bug Report
+            </div>
+            <div id="formMain">
+
+                <label for="title" class="inputLabel">Title:*</label>
+                <input type="text" name="title" id="title" class="inputBar" required>
+                <br>
+                <label for="Desc" class="inputLabel">Description:*</label>
+                <textarea name="Desc" id="Desc" rows="6" required></textarea>
+                <br>
+                <label for="OS" class="inputLabel">Operating system:</label>
+                <select name="OS" id="OS" class="inputBar">
+                    <option value="windows">Windows XP</option>
+                    <option value="linux">Linux</option>
+                    <option value="mac">Mac OS</option>
+                </select>
+                <br>
+                <label for="Product" class="inputLabel">Product:*</label>
+                <select name="product" id="Product" class="inputBar" required>
+                    <option value="formoid">Formoid</option>
+                    <option value="tabloid">Tabloid</option>
+                </select>
+                <br>
+                <label for="Version" class="inputLabel">Version:*</label>
+                <input type="text" name="version" id="Version" required>
+                <br>
+                <label class="inputLabel">License:</label>
+                    <input type="radio" name="license" id="free">
+                    <label for="free" class="radiolabel">Free</label>
+                    <input type="radio" name="license" id="business">
+                    <label for="business" class="radiolabel">Business</label>
+            <br>
+            <label for="severity" class="inputLabel">Severity:</label>
+            <select name="severity" id="severity" class="inputBar">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <br>
+            <label for="attach" class="inputLabel">Attachments:</label>
+            <output></output>
+            <input type="file" name="attach" id="attach" >
+            <br>
+        </div>
+            <div id="formFoot">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

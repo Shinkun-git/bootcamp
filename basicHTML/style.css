@@ -1,0 +1,164 @@
+header nav{
+    height:70px;
+    border : 2px solid #582f0e;
+    padding: 7px 14px;
+}
+
+nav ul{
+    padding: 10px;
+    display: inline;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color : #572c1b;
+}
+
+.navleft img{
+    /* width:; */
+    height: 70px;
+}
+#navleftImage{
+    padding-top:0px;
+    /* padding-bottom: 10px; */
+}
+.navleft{
+    height: 60px;
+    padding: 20px 10px;
+    float:left;
+    margin-right: 10px;
+}
+.navleft a{
+    font-weight: bold;
+    font-size: large;
+    vertical-align: middle;
+}
+
+.navleft a:hover{
+    color :  #e63946;
+}
+#navright{
+    height: 60px;
+    line-height: 40px;
+    float:right;
+    padding: 20px 10px;
+}
+#navright input{
+    padding-top: 0px;
+    height: 30px;
+}
+section{
+    margin: 10px;
+    border: 1px solid #582f0e;
+    height: 400px;
+}
+.topArticle{
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+.topArticle img{
+    float : right;
+    align-self:bottom;
+    width: 50%;
+    height: 20em;
+}
+.topArticle h2{
+    float:left;
+    animation-name: headAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.topArticle p{
+    clear: left;
+}
+.topArticle p::selection{
+    color:#ee18e0;
+}
+.topArticle button{
+    color:antiquewhite;
+    background-color: #e63946;
+    border:none;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.bottomArticle{
+    margin: 20px 5px 10px;
+    float: left;
+    padding: 8px 12px;
+    width:30%
+}
+.bottomArticle img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+}
+.bottomArticle a{
+    color: #e63946;
+    text-decoration: none;
+}
+.footNav{
+    height: 80px;
+    border : 2px solid #582f0e;
+    padding: 7px 14px;
+}
+.footNav > div{
+    width:33%;
+}
+.footNav > p{
+    text-align: center;
+    color: #e63946;
+}
+#btmNavImg{
+    width: 20%;
+    height: fit-content;
+}
+
+.btmNavLeft{
+    display: inline-block;
+    width:20%;
+}
+.btmNavLeft img{
+    width: 10%;
+    height:fit-content;
+}
+.btmNavCenter{
+    display: inline-block;
+    width:60%;
+}
+.btmNavCenter li{
+    float : left;
+    margin-left: 20px; 
+    padding: 0 10px;
+}
+.btmNavRight{
+    display: inline-block;
+    width:20%;
+}
+.btmNavRight a{
+    margin-left: auto;
+    float : right;
+}
+
+.btmNavRight img{
+    float:inline-start;
+    width: 30px;
+    height: fit-content;
+    padding : 5px 10px;
+}
+@keyframes headAnimation{
+    from{
+        background-color: #669bbc;
+        color: #1b263b;
+        padding:20px 4px;
+    }
+    to{
+        background-color: #002855;
+        color:antiquewhite;
+        border: 2px #ff70a6 dotted;
+        border-radius: 50%;
+        font-weight: 800;
+        padding: 5px 15px;
+    }
+}
