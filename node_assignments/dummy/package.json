@@ -1,0 +1,17 @@
+{
+  "name": "dummypckg",
+  "version": "1.0.0",
+  "description": "dummy to install devdep dep",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "one-liner-joke": "^1.2.2"
+  },
+  "devDependencies": {
+    "inspirational-quotes": "^2.0.1"
+  }
+}
