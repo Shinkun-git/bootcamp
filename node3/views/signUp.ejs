@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+</style>
+
+<body>
+    <h2>Sign UP form</h2>
+    <section>
+        <form action="http://localhost:5001/api/v1/signUp" method="post">
+            <label for="name">Name:
+                <input type="text" name="name" id="name" autocomplete="off">
+            </label>
+            <br>
+            <label for="age">Age:
+                <input type="number" max="100" min="1" name="age">
+            </label>
+            <br>
+            <label for="email">Email:
+
+                <input type="email" name="email" id="email" autocomplete="off">
+            </label>
+            <br>
+            <label for="password">Password:
+
+                <input type="password" name="password" id="password">
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+
+</html>
