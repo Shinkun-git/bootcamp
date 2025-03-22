@@ -15,7 +15,8 @@ const app = express();
 app.use(session({
     secret: 'my-secret-key',
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
+    cookie: { secure: false }
 }));
 app.use(passport.initialize());
 app.use(passport.session());

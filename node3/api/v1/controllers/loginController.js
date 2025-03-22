@@ -29,4 +29,21 @@ router.get('/github/callback',passport.authenticate('github', {failureRedirect:'
         res.redirect('/home');
     }
 )
+
+router.post("/localLogin", (req, res, next) => {
+    passport.authenticate("local", (err, user, info) => {
+      if (err) return res.status(500).json({ success: false, message: err.message });
+      if (!user) return res.status(401).json({ success: false, message: info.message });
+      console.log("User authenticated:", user);
+      req.login(user, (err) => {
+        if (err) {
+            console.error("Login error:", err);
+            return res.status(500).json({ success: false, message: "Login failed" });
+          }
+        return res.redirect('/home');
+      });
+    })(req, res, next);
+  });
+
+
 export default router;
