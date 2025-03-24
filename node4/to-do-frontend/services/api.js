@@ -1,8 +1,8 @@
-const API_BASE_URL = 'http://localhost:3000/api/v1/todos'; // Adjust if needed
+const API_BASE_URL = 'http://localhost:5000/api/v1/todos'; // Adjust if needed
 
 export const fetchTodos = async () => {
     try {
-        const response = await fetch('http://localhost:3000/api/v1/todos/fetchAll');
+        const response = await fetch(`${API_BASE_URL}/fetchAll`);
         const data = await response.json();
         console.log("Fetch All Response:", data); // Debugging
 
