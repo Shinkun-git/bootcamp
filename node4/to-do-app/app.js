@@ -7,6 +7,7 @@ const cors = require('cors');
 var api = require('./api/index.js');
 var indexRouter = require('./routes/index');
 var app = express();
+var config = require('./config/index.js');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,10 +33,11 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
+  
   // render the error page
   res.status(err.status || 500);
   res.render('error');
 });
 
+// app.listen(config.serverPort, () => { console.log(`Server running on port ${config.serverPort}`) });
 module.exports = app;
